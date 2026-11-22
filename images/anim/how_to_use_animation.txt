@@ -1,0 +1,108 @@
+ПО ЧЕЛОВЕЧЕСКИ ПРОСИМ, ЕСЛИ ЮЗАЕТЕ АНИМАЦИИ, ТО ОСТАВЛЯЙТЕ ССЫЛКИ НА НАШ МОД
+
+
+Анимация Звездопада
+пишем                show bg stars_s          затем добавляем любую из картинок, копируя прямо из кода ниже       show(zvezda      zvezda1      zvezda2     zvezda3_h       zvezda4_h)
+
+
+
+
+    show bg stars_s with dissolve
+    show zvezda1:
+        xalign 1.5 yalign 0.2
+        linear 2.0 xalign -0.5 yalign 0.2
+        pause(15.0)
+        repeat
+    pause(1.0)
+    show zvezda:
+        xalign 1.5 yalign 0.3
+        linear 1.0 xalign -0.9 yalign 1.5
+        pause(8.0)
+        repeat
+    pause(2.1)
+    show zvezda3_h:
+        xalign 1.0 yalign -0.2
+        linear 1.0 xalign -0.9 yalign 1.2
+        pause(10.0)
+        repeat
+    pause(7.0)
+    show zvezda4_h:
+        xalign 1.5 yalign 0.6
+        linear 1.0 xalign -0.5 yalign 0.7
+        pause(19.0)
+        repeat
+    pause(2.5)
+    show zvezda2:
+        xalign 1.5 yalign 0.6
+        linear 3.0 xalign -0.5 yalign 0.4
+        pause(11.0)
+        repeat
+
+
+
+Анимация пристани днем           scene den_boat                              play ambience pristan_day_sunset_poezd
+Анимация пристани на закате      scene zakat_boat                            play ambience pristan_day_sunset_poezd
+Анимация пристани ночью          scene night_boat                            play ambience pristan_noch_poezd
+
+
+Анимация пляжа ночью             scene noch_plyazh                           play ambience plyazh_poezd_night
+Анимация пляжа днем              scene den_plyazh                            play ambience plyazh_poezd
+Анимация пляжа на закате         scene zakat_plyazh                          play ambience plyazh_poezd
+
+
+
+
+ОД ДОМ СНАРУЖИ
+
+    scene backDayHouseOD
+    show cloud_test2 at rc_scene_pause_repeat(0, 900, 60.0, 5.0, 400, 400)
+    show cloud_test at rc_scene_pause_repeat(-10, 700, 25.0, 4.0, 200, 200)
+    show cloud_test3 at rc_scene_pause_repeat(0, 850, 40.0, 6.0, -100, -100)
+    show frontDayHouseOD
+    show 4secRight at rc_scene_repeat(3, -3, 0.3)
+    show 4secLeft at rc_scene_repeat(-3, 3, 0.3)
+    show 2secRight at rc_scene_repeat(2, -2, 0.2)
+    show 2secLeft at rc_scene_repeat(-2, 2, 0.2)
+    show 1secRight at rc_scene_repeat(2, -2, 0.15)
+    show 1secLeft at rc_scene_repeat(-2, 2, 0.15)
+
+ПЛОЩАДЬ
+
+    scene backDaySquare
+    show cloud_test2 at rc_scene_pause_repeat(0, 1900, 110.0, 5.0, 400, 400)
+    show cloud_test at rc_scene_pause_repeat(-10, 1900, 180.0, 4.0, 200, 200)
+    show cloud_test3 at rc_scene_pause_repeat(0, 1850, 140.0, 6.0, -100, -100)
+    show cloud_big1 at rc_scene_pause_repeat(-600, 1850, 160.0, 8.0, 200, 200)
+    show frontDaySquare
+    show daySquare4secRight at rc_scene_repeat(2, -2, 0.15)
+    show daySquare4secLeft at rc_scene_repeat(-2, 2, 0.15)
+    show daySquare2secRight at rc_scene_repeat(2, -2, 0.2)
+    show daySquare2secLeft at rc_scene_repeat(-2, 2, 0.2)
+    show daySquare1secRight at rc_scene_repeat(3, -3, 0.3)
+    show daySquare1secLeft at rc_scene_repeat(-3, 3, 0.3)
+
+БЕГАЮЩАЯ (ПРЫГАЮЩАЯ) СЛАВЯ
+
+    show sl begaem_rc with dissolve
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

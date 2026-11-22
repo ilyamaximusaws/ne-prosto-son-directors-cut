@@ -1,0 +1,123 @@
+screen nd_say:
+    window:
+        background None
+        id "window"
+        $ timeofday = persistent.timeofday
+        if persistent.font_size == "large":
+            imagebutton:
+                auto ("mods/notdream/UserInterface/gui/dialogue_box/"+timeofday+"/backward_%s.png")
+                xpos 38
+                ypos 924
+                action ShowMenu("text_history")
+            add ("mods/notdream/UserInterface/gui/dialogue_box/"+timeofday+"/dialogue_box_large.png"):
+                xpos 174
+                ypos 866
+            imagebutton:
+                auto ("mods/notdream/UserInterface/gui/dialogue_box/"+timeofday+"/hide_%s.png")
+                xpos 1508
+                ypos 883
+                action HideInterface()
+            imagebutton:
+                auto ("mods/notdream/UserInterface/gui/dialogue_box/"+timeofday+"/save_%s.png")
+                xpos 1567
+                ypos 883
+                action ShowMenu('save')
+            imagebutton:
+                auto ("mods/notdream/UserInterface/gui/dialogue_box/"+timeofday+"/menu_%s.png")
+                xpos 1625
+                ypos 883
+                action ShowMenu('game_menu_selector')
+            imagebutton:
+                auto ("mods/notdream/UserInterface/gui/dialogue_box/"+timeofday+"/load_%s.png")
+                xpos 1682
+                ypos 883
+                action ShowMenu('load')
+            if not config.skipping:
+                imagebutton:
+                    auto ("mods/notdream/UserInterface/gui/dialogue_box/"+timeofday+"/forward_%s.png")
+                    xpos 1768
+                    ypos 924
+                    action Skip()
+            else:
+                imagebutton:
+                    auto ("mods/notdream/UserInterface/gui/dialogue_box/"+timeofday+"/fast_forward_%s.png")
+                    xpos 1768
+                    ypos 924
+                    action Skip()
+            text what:
+                id "what"
+                xpos 194
+                ypos 914
+                xmaximum 1541
+                size 35
+                line_spacing 1
+            if who:
+                text who:
+                    id "who"
+                    xpos 194
+                    ypos 877
+                    size 35
+                    line_spacing 1
+        elif persistent.font_size == "small":
+            imagebutton:
+                auto ("mods/notdream/UserInterface/gui/dialogue_box/"+timeofday+"/backward_%s.png")
+                xpos 48
+                ypos 981
+                action ShowMenu("text_history")
+            add ("mods/notdream/UserInterface/gui/dialogue_box/"+timeofday+"/dialogue_box.png"):
+                xpos 174
+                ypos 926
+            imagebutton:
+                auto ("mods/notdream/UserInterface/gui/dialogue_box/"+timeofday+"/hide_%s.png")
+                xpos 1478
+                ypos 955
+                action HideInterface()
+            imagebutton:
+                auto ("mods/notdream/UserInterface/gui/dialogue_box/"+timeofday+"/save_%s.png")
+                xpos 1537
+                ypos 955
+                action ShowMenu('save')
+            imagebutton:
+                auto ("mods/notdream/UserInterface/gui/dialogue_box/"+timeofday+"/menu_%s.png")
+                xpos 1595
+                ypos 955
+                action ShowMenu('game_menu_selector')
+            imagebutton:
+                auto ("mods/notdream/UserInterface/gui/dialogue_box/"+timeofday+"/load_%s.png")
+                xpos 1652
+                ypos 955
+                action ShowMenu('load')
+            if not config.skipping:
+                imagebutton:
+                    auto ("mods/notdream/UserInterface/gui/dialogue_box/"+timeofday+"/forward_%s.png")
+                    xpos 1758
+                    ypos 981
+                    action Skip()
+            else:
+                imagebutton:
+                    auto ("mods/notdream/UserInterface/gui/dialogue_box/"+timeofday+"/fast_forward_%s.png")
+                    xpos 1758
+                    ypos 981
+                    action Skip()
+            text what:
+                id "what"
+                xpos 260
+                ypos 979
+                xmaximum 1401
+                size 28
+                if persistent.timeofday == "prologue":
+                    color "#F2F2F2"
+                elif persistent.timeofday == "day":
+                    color "#F2F2F2"
+                elif persistent.timeofday == "sunset":
+                    color "#F2F2F2"
+                elif persistent.timeofday == "night":
+                    color "#F2F2F2"
+                line_spacing 2
+            if who:
+                text who:
+                    id "who"
+                    xpos 290
+                    ypos 951
+                    size 28
+                    line_spacing 2

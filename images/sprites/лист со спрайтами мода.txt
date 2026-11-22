@@ -1,0 +1,39 @@
+Пионер в пионерской форме
+pi2 angry pioneer
+pi2 grin pioneer
+pi2 normal pioneer
+pi2 serious pioneer
+pi2 shocked pioneer
+pi2 smile pioneer
+pi2 surprise pioneer
+pi2 upset pioneer
+
+Пионер в черной рубашке
+pi2 angry shirt
+pi2 grin shirt
+pi2 normal shirt
+pi2 serious shirt
+pi2 shocked shirt
+pi2 smile shirt
+pi2 surprise shirt
+pi2 upset shirt
+
+Физрук
+ba ev
+ba normal
+ba sm
+
+Алиса
+dv surprise coat
+dv smile coat
+dv grin dance
+dv normal dance
+
+Василий
+vsb rf
+vsc rf
+vscl rf
+vsm rf
+
+Талян
+tl_1_pioneer

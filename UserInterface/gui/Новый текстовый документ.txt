@@ -1,0 +1,24 @@
+                null width 15 height 40
+
+                grid 2 1 xfill True:
+                    add "mods/notdream/UserInterface/gui/Preference/nd_voice_toogle.png" #xpos 164 ypos 850
+                    if persistent.nd_voiceplay == False:
+                        imagebutton:
+                            #xpos 718 ypos 850
+                            xalign .5
+                            idle ("mods/notdream/UserInterface/gui/Preference/nd_pref_tumbnail_off.png")
+                            hover ("mods/notdream/UserInterface/gui/Preference/nd_pref_tumbnail_off.png") 
+                            action [
+                                Function(renpy.music.set_volume, volume=1, delay=0, channel="nd_voice"),
+                                SetVariable("persistent.nd_voiceplay", True)
+                                ]
+                    else:
+                        imagebutton:
+                            #xpos 718 ypos 850
+                            xalign .5
+                            idle ("mods/notdream/UserInterface/gui/Preference/nd_pref_tumbnail_on.png")
+                            hover ("mods/notdream/UserInterface/gui/Preference/nd_pref_tumbnail_on.png") 
+                            action [
+                                Function(renpy.music.set_volume, volume=0, delay=0, channel="nd_voice"),
+                                SetVariable("persistent.nd_voiceplay", False)
+                                ]
