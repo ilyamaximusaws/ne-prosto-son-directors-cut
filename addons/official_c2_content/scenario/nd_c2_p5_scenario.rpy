@@ -1127,11 +1127,12 @@ label nd_c2_partSix:
     play back_ambience sfx_head_heartbeat fadein 4
 
     scene bg nd_ext_path_snow_night_2:
-        zoom 1.05anchor (48,27)
-        ease 0.20pos (0, 0)
-        ease 0.20pos (25,25)
-        ease 0.20pos (0, 0)
-        ease 0.20pos (-25,25)
+        zoom 1.05
+        anchor (48,27)
+        ease 0.20 pos (0, 0)
+        ease 0.20 pos (25,25)
+        ease 0.20 pos (0, 0)
+        ease 0.20 pos (-25,25)
         repeat
     with flash
 

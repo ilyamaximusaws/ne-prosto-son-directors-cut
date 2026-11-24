@@ -205,11 +205,12 @@ label nd_day_5_dream_pi:
 
     play sound_loop nds_list["nd_run_on_road"] fadein 3
     scene bg ext_houses_night:
-        zoom 1.05anchor (48,27)
-        ease 0.20pos (0, 0)
-        ease 0.20pos (25,25)
-        ease 0.20pos (0, 0)
-        ease 0.20pos (-25,25)
+        zoom 1.05
+        anchor (48,27)
+        ease 0.20 pos (0, 0)
+        ease 0.20 pos (25,25)
+        ease 0.20 pos (0, 0)
+        ease 0.20 pos (-25,25)
         repeat
     with dissolve
 
@@ -306,19 +307,20 @@ label nd_day_5_dream_pi:
     $ renpy.pause(1, hard=True)
 
     scene bg ext_path2_night:
-        zoom 1.05anchor (48,27)
-        ease 0.20pos (0, 0)
-        ease 0.20pos (25,25)
-        ease 0.20pos (0, 0)
-        ease 0.20pos (-25,25)
+        zoom 1.05
+        anchor (48,27)
+        ease 0.20 pos (0, 0)
+        ease 0.20 pos (25,25)
+        ease 0.20 pos (0, 0)
+        ease 0.20 pos (-25,25)
         repeat
     with dissolve2
 
     window show
     "Я бежал и бежал, и просто не мог остановиться."
     "Я боялся, что меня найдут утром в лесу, каким бы я ни был. Живым или мёртвым, или неспособным к связной речи."
-    "Если бы кто-то смотрел на меня сейчас со стороны, он бы точно захотел прекратить мои страдания, вскрыть мне вены, горло, или просто повесить."
-    th "И если я умру,{w} то будет лучше,{w} если бы она не видела моё тело..."
+    "Если бы кто-то смотрел на меня сейчас со стороны, он бы не понял, куда я бегу в такую ночь."
+    th "И если я не вернусь,{w} пусть хоть она не увидит меня таким..."
     window hide
 
     stop sound_loop fadeout 5
@@ -443,11 +445,12 @@ label nd_day_5_dream_us:
 
     play sound_loop nds_list["nd_run_on_road"] fadein 3
     scene bg ext_houses_night:
-        zoom 1.05anchor (48,27)
-        ease 0.20pos (0, 0)
-        ease 0.20pos (25,25)
-        ease 0.20pos (0, 0)
-        ease 0.20pos (-25,25)
+        zoom 1.05
+        anchor (48,27)
+        ease 0.20 pos (0, 0)
+        ease 0.20 pos (25,25)
+        ease 0.20 pos (0, 0)
+        ease 0.20 pos (-25,25)
         repeat
     with dissolve
 
@@ -2314,11 +2317,12 @@ label nd_day_5_now:
     play sound_loop sfx_run_forest fadein 3
 
     scene bg ext_path2_day:
-        zoom 1.05anchor (48,27)
-        ease 0.20pos (0, 0)
-        ease 0.20pos (25,25)
-        ease 0.20pos (0, 0)
-        ease 0.20pos (-25,25)
+        zoom 1.05
+        anchor (48,27)
+        ease 0.20 pos (0, 0)
+        ease 0.20 pos (25,25)
+        ease 0.20 pos (0, 0)
+        ease 0.20 pos (-25,25)
         repeat
     with dissolve
 
@@ -4713,11 +4717,12 @@ label nd_day_5_city_in:
     $ renpy.pause(1, hard=True)
     play sound_loop nds_list['nd_run_on_road'] fadein 3
     scene bg nd_kp_city_day:
-        zoom 1.05anchor (48,27)
-        ease 0.20pos (0, 0)
-        ease 0.20pos (25,25)
-        ease 0.20pos (0, 0)
-        ease 0.20pos (-25,25)
+        zoom 1.05
+        anchor (48,27)
+        ease 0.20 pos (0, 0)
+        ease 0.20 pos (25,25)
+        ease 0.20 pos (0, 0)
+        ease 0.20 pos (-25,25)
         repeat
     with dissolve
 
@@ -4731,11 +4736,12 @@ label nd_day_5_city_in:
     $ renpy.pause(3, hard=True)
     $ volume (0.2, "ambience")
     scene bg nd_evergarden_day:
-        zoom 1.05anchor (48,27)
-        ease 0.20pos (0, 0)
-        ease 0.20pos (25,25)
-        ease 0.20pos (0, 0)
-        ease 0.20pos (-25,25)
+        zoom 1.05
+        anchor (48,27)
+        ease 0.20 pos (0, 0)
+        ease 0.20 pos (25,25)
+        ease 0.20 pos (0, 0)
+        ease 0.20 pos (-25,25)
         repeat
     with dissolve2
 
@@ -7217,11 +7223,12 @@ label nd_day_5_camp_in:
     
     nd_il "Ульяна, постой!"
     scene bg ext_path_night:
-        zoom 1.05anchor (48,27)
-        ease 0.20pos (0, 0)
-        ease 0.20pos (25,25)
-        ease 0.20pos (0, 0)
-        ease 0.20pos (-25,25)
+        zoom 1.05
+        anchor (48,27)
+        ease 0.20 pos (0, 0)
+        ease 0.20 pos (25,25)
+        ease 0.20 pos (0, 0)
+        ease 0.20 pos (-25,25)
         repeat
     with flash
 
@@ -7231,11 +7238,12 @@ label nd_day_5_camp_in:
     window hide
 
     scene bg ext_path2_night:
-        zoom 1.05anchor (48,27)
-        ease 0.20pos (0, 0)
-        ease 0.20pos (25,25)
-        ease 0.20pos (0, 0)
-        ease 0.20pos (-25,25)
+        zoom 1.05
+        anchor (48,27)
+        ease 0.20 pos (0, 0)
+        ease 0.20 pos (25,25)
+        ease 0.20 pos (0, 0)
+        ease 0.20 pos (-25,25)
         repeat
     with flash
 
@@ -7404,11 +7412,11 @@ label nd_end_thunder:
     play nd_voice d5_7267_nv_il27
     "Произнёс я, проглотив половину слов всего предложения.{w=0.5} Девочка вытерла слёзы, смущённо отводя взгляд от моих глаз."
     play nd_voice d5_7267_nv_il28
-    "Её глаза...{w=0.5} Словно летнее небо, такое нежное..."
+    "Её глаза...{w=0.5} Серые, с зеленоватым ободком.{w=0.5} Очень внимательные."
     play nd_voice d5_7267_nv_il29
     "Я почувствовал, будто моё сердце остановилось."
     play nd_voice d5_7267_nv_il30
-    "Меня шатало ветром сейчас как флаг, стоящий на флагштоке на берегу у моря. У того самого моря, что отражается в глазах этой пионерки."
+    "Меня трясло, будто я простоял на ветру целую ночь."
     play nd_voice d5_7267_nv_il31
     "С каждой секундой я понимал, что достаточно запутался в себе.{w=0.5} Что у этого момента может быть только один исход..."
     

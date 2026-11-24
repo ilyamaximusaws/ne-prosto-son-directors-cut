@@ -579,7 +579,7 @@ init:
 
     image nd_rain_alternate:
         truecenter
-        xzoom 1.3yzoom 1.7
+        xzoom 1.3 yzoom 1.7
         contains:
             SnowBlossom("nd_raindrop_particle_large", 10, 50, (75, 125), (1600, 1700))
         contains:
